@@ -1,0 +1,130 @@
+body {
+    background-color: #1b1a17;
+}
+
+.about-me-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-code-bg {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 18px;
+    color:rgba(163,87,9,0.5);
+    max-width: 100%;
+    padding-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-code-bg img {
+    position: absolute;
+    border-radius: 50%;
+    border:none;
+    width:50%;
+    opacity: 0.6;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.about-me-info {
+    padding-top: 250px;
+}
+
+.about-me-info-1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+    font-size:64px;
+    line-height: 67px;
+    color: rgba(255, 131, 3, 1);
+} 
+
+.about-me-info-2 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size:40px;
+    line-height: 42px;
+    color: rgba(240, 227, 202, 1)
+}
+
+.about-me-info-3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 21px;
+    color: rgba(240, 227, 202, 1)
+}
+
+.about-me-story {
+    font-family: 'Inconsolata', monospace;
+    font-size:24px;
+    line-height: 25px;
+    font-weight: 400;
+    color:rgb(240, 227, 202);
+    width:70%;
+    margin:0;
+}
+
+.about-me-story-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.about-me-story-container img {
+    margin-right: 20px;
+}
+
+.skills-text {
+    font-family: 'Inconsolata', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width:100%;
+    color:rgba(255,131,3,1);
+}
+
+.cards {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.skill-card {
+    background-color: #21201D;
+    width:200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skill-card span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:32px;
+    font-weight: 400;
+    color:white;
+    margin-top:-20px;
+    text-transform: uppercase;
+}
+
+.works-text {
+    padding-top: 100px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width:100%;
+    color:rgba(255,131,3,1);
+
+}

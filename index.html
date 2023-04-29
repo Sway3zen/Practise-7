@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1B1A17;">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span style="color: rgba(255, 131, 3, 1)">&lt;/S</span><span
+                        style="color: rgba(240, 227, 202, 1)">wayz<span></span><span
+                            style="color: rgba(255, 131, 3, 1)">e&gt;</span></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Перемикач навігації">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Pet-Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me-section">
+
+
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-md-4 mb-4 col-8 align-items-center text-white about-me-info">
+                        <p class="about-me-info-1">Nazar Koval</p>
+                        <p class="about-me-info-2">Back-End Developer</p>
+                        <p class="about-me-info-3">Back-end magician seeking innovative projects to conjure up powerful and seamless technology
+                            for all.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-6 mb-4 col-8 ">
+                        <p class="about-me-code-bg">
+                            let button_menu = document.querySelector(".header_button");<br>
+                            let float_menu = document.querySelector(".header_menu--float");<br>
+                            <br>
+                            let line_top = document.querySelector(".header_button_line--top");<br>
+                            let line_under = document.querySelector(".header_button_line--bottom");<br>
+                            <br>
+                            button_menu.isSelected = false;<br>
+                            <br>
+                            function addEffectWriting(element, time) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;let element_array = element.innerText.split("");<br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;element.count = 0;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;element.innerText = "";<br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;function writeSymbols() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element.innerText += element_array[element.count];<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element.count++;<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (element.count &lt;= element_array.length) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() => {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writeSymbols();<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, time);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}   else if (element.count >= element_array.length) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element.count = 0;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element.innerText = "";<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writeSymbols();<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;writeSymbols();<br>
+                            }<br>
+                        <img src="images/Avatar.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="about-me-story-container">
+                <img src="images/Logo.png" alt="">
+                <p class="about-me-story">A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <p class="skills-text">My Skills</p>
+                <div class="cards">
+                    <div class="skill-card">
+                        <img src="images/htmlicon.png
+                        " alt="">
+                        <span><br>html5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/cssicon.png
+                        " alt="">
+                        <span><br>css3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/jsicon.png
+                        " alt="">
+                        <span style="text-transform: none;"><br>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/sccsicon.png
+                        " alt="">
+                        <span><br>scss</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/giticon.png
+                        " alt="">
+                        <span><br>git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <p class="works-text">My Works</p>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-4 col-md-4 mb-4 col-8 align-items-center text-white ">
+                            <span></span>
+                        </div>
+                        <div class="col-sm-4 col-md-6 mb-4 col-8 ">
+                            <a href=""></a>
+                        </div>
+                        <div class="col-sm-4 col-md-6 mb-4 col-8 ">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
