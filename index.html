@@ -17,9 +17,17 @@
 </head>
 
 <body>
+    <script>
+window.onload = function() {
+  setTimeout(function() {
+    document.querySelector('body').classList.add('loaded');
+  }, 3000);
+}
+
+    </script>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1B1A17;">
-            <div class="container">
+            <div class="container active">
                 <a class="navbar-brand" href="#"><span style="color: rgba(255, 131, 3, 1)">&lt;/S</span><span
                         style="color: rgba(240, 227, 202, 1)">wayz<span></span><span
                             style="color: rgba(255, 131, 3, 1)">e&gt;</span></a>
@@ -29,16 +37,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">About me</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#aboutme">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Skills</a>
+                            <a class="nav-link text-light" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Pet-Projects</a>
+                            <a class="nav-link text-light" href="#projects">Pet-Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contacts</a>
+                            <a class="nav-link text-light" href="#contact">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +59,7 @@
 
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-sm-4 col-md-4 mb-4 col-12 align-items-center text-white about-me-info">
+                    <div class="col-sm-4 col-md-4 mb-4 col-12 align-items-center text-white about-me-info" id="aboutme">
                         <p class="about-me-info-1">Nazar Koval</p>
                         <p class="about-me-info-2">Back-End Developer</p>
                         <p class="about-me-info-3">Back-end magician seeking innovative projects to conjure up powerful and seamless technology
@@ -104,7 +112,7 @@
             </div>
             </div>
         </section>
-        <section>
+        <section id="skills">
             <div class="container">
                 <p class="skills-text">My Skills</p>
                 <div class="cards">
@@ -136,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="projects">
             <div class="container">
                 <p class="works-text">My Works</p>
                     <div class="row work-main">
@@ -167,7 +175,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
                 <div class="row justify-content-evenly footer-main">
                     <div class="col-sm-4 col-md-4 mb-4 col-8 text-white">
@@ -186,7 +194,9 @@
             </div>
         </div>
     </footer>
-
+    <div id="preloader">
+        <div class="loader"></div>
+      </div>
     <script src="script/bootstrap.bundle.min.js"></script>
 </body>
 
